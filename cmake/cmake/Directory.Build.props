@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup>
+	<VcpkgInstalledDir>C:\vcpkg_installed\test_intec_win_only</VcpkgInstalledDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+	<ClCompile>
+	  <AdditionalIncludeDirectories>$(VcpkgInstalledDir)\x86-windows\include;$(VcpkgInstalledDir)\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+	</ClCompile>
+	<Link>
+	  <AdditionalLibraryDirectories>$(VcpkgInstalledDir)\x86-windows\lib;$(VcpkgInstalledDir)\x64-windows\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+	</Link>
+  </ItemDefinitionGroup>
+</Project>
